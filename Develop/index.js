@@ -1,10 +1,17 @@
-// TODO: Include packages needed for this application
+//Include packages needed for this application
 
-const inquirer = require('inquirer');
-const fs = require('fs');
-const markdown = require('./utils/generateMarkdown.js');
+const fs = require("fs");
+const path = require("path");
+const inquirer = require("inquirer");
+//Gets absolute path for the generatwMardown file
+const generateMarkdownDir = path.resolve(__dirname, "utils");
+const generateMarkdownFile = path.join(
+  generateMarkdownDir,
+  "generateMarkdown.js"
+);
+const generateMarkdown = require(generateMarkdownFile);
 
-// TODO: Create an array of questions for user input
+//Create an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -32,20 +39,6 @@ const questions = [
         name: 'credits',
     },
     {
-        type: 'list',
-        message: 'Choose a license for your project',
-        choices: [
-          'None',
-          'Apache License 2.0',
-          'GNU General Public License v3.0',
-          'MIT License',
-          'Boost Software License 1.0',
-          'Mozilla Public License 2.0',
-          'The Unlicense',
-        ],
-        name: 'license',
-    },
-    {
         type: 'input',
         message: 'Enter contribution guidelines for your project:',
         name: 'contributing',
@@ -67,19 +60,27 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+//Create a function to write README file
 function writeToFile(fileName, data) {
-fs.writeFile(fileName, markdown.generateMarkdown(data), (err) =>
-err ? console.log(err) : console.log('Successfully created a README file!')
-);
-};
-
-// TODO: Create a function to initialize app
-function init() {  
-    inquirer.prompt(questions).then((response) => {
-    writeToFile("README.md", response);
-  });
-}
-
-// Function call to initialize app
-init();
+    fs.writeFile(fileName, data, function (err) {
+      if (err) {
+        return console.log(err);
+      }
+      console.log("README generated successfully!");
+    });
+  }
+  
+  // function to initialize program
+  function init() {
+    inquirer.prompt(questions).then((data) => {
+      readme = generateMarkdown(data);
+  
+      writeToFile("README.md", readme);
+  
+      console.log(data);
+      console.log(readme);
+    });
+  }
+  
+  // function call to initialize program
+  init();
