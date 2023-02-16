@@ -25,4 +25,4 @@ This project is licensed under the MIT license
   ## Questions
   If you have any questions you can email me at: girardipm@gmail.com 
 
-  You can find more of my work at: [pmgirardi](https://github.com/pmgirardi) 
+  You can find more of my work on my GitHub: [pmgirardi](https://github.com/pmgirardi) 
