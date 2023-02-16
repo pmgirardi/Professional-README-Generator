@@ -13,7 +13,7 @@
   
   * [Questions](#questions)
   ## Installation Instructions
-Via command-line, navigate into the project directory and run node index.js [Video demonstration of application] (link to video)
+  Clone the git repository and run npm install in the project directory.
   ## Usage
   Via command-line, navigate into the project directory and run node index.js [Video demonstration of application] (link to video)
   ## License
