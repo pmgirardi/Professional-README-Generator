@@ -1,32 +1,28 @@
 # ReadMe Generator Pro
-
+  ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
   ## Description
   This command-line application that generates a professional README.md file from a user's input.
   ## Table of Contents
+  * [Installation](#installation-instructions)
   
-[Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributions](#contributions)
   
-[Usage](#usage)
+  * [Tests](#tests)
   
-[Contributing](#contributing)
-  
-[Tests](#tests)
-  
-[License](#license)
-  
-[Questions](#questions)
-  ## Installation
-  Clone repo and run npm i in the project directory.
+  * [Questions](#questions)
+  ## Installation Instructions
+Via command-line, navigate into the project directory and run node index.js [Video demonstration of application] (link to video)
   ## Usage
   Via command-line, navigate into the project directory and run node index.js [Video demonstration of application] (link to video)
-  ## Contributing
-  To contact me via email provided in this ReadMe file.
-  ## Tests
-  None.
   ## License
-  Licensed under the [undefined](undefined)
+This project is licensed under the MIT license
+  ## Contributions
+  To contribute, contact me via the email provided on this README file.
+  ## Tests
+  None
   ## Questions
-  GitHub: [GitHub: [pmgirardi](https://github.com/pmgirardi)](https://github.com/GitHub: [pmgirardi](https://github.com/pmgirardi))
+  If you have any questions you can email me at: girardipm@gmail.com 
 
-  For questions, email me at [For questions, email me at ](mailto:girardipm@gmail.com)
-  
+  You can find more of my work at: [pmgirardi](https://github.com/pmgirardi) 

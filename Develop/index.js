@@ -16,7 +16,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter the title of your project:',
-        name: title,
+        name: 'title',
     },
     {
         type: 'input',
@@ -34,6 +34,12 @@ const questions = [
         name: 'usage',
     },
     {
+        type: 'list',
+        name: 'license',
+        message: 'What kind of license should your project have?',
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+    },
+    {
         type: 'input',
         message: 'Enter a list your collaborators:',
         name: 'credits',
@@ -41,7 +47,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter contribution guidelines for your project:',
-        name: 'contributing',
+        name: 'contributions',
     },
     {
         type: 'input',
