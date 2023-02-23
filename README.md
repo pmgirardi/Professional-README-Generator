@@ -15,7 +15,10 @@
   ## Installation Instructions
   Clone the git repository and run npm install in the project directory.
   ## Usage
-  Via command-line, navigate into the project directory and run node index.js [Video demonstration of application] (link to video)
+  Via command-line, navigate into the project directory and run node index.js.
+  
+ [Video demonstration of application](https://drive.google.com/file/d/1JcQhubpNvDHpW-cnURNH6B7qQJbIxr-V/view)
+
   ## License
 This project is licensed under the MIT license
   ## Contributions
